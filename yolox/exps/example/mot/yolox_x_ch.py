@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.distributed as dist
 
 from yolox.exp import Exp as MyExp
-from yolox.data import get_yolox_datadir
+from yolox.database import get_yolox_datadir
 
 class Exp(MyExp):
     def __init__(self):
