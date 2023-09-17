@@ -70,7 +70,7 @@ Download and store the trained models in 'weights' folder as follow:
 ```
 - We used the publicly available [ByteTrack](https://github.com/ifzhang/ByteTrack) model zoo trained on MOT17 and MOT20 for YOLOX object detection.
 
-- We used the publicly available [BOT-SORT](https://github.com/NirAharon/BoT-SORT) model zoo trained on MOT17 and MOT20 for FastReID and the GMC_files.
+- We used the publicly available [BOT-SORT](https://github.com/NirAharon/BoT-SORT) model zoo trained on MOT17 and MOT20 for FastReID and GMC_files.
 
 ## Tracking
 
@@ -104,5 +104,5 @@ The codebase is built highly upon
 [BOT-SORT](https://github.com/NirAharon/BoT-SORT),
 [ByteTrack](https://github.com/ifzhang/ByteTrack), 
 [FastReID](https://github.com/JDAI-CV/fast-reid) and
-[YOLOv7](https://github.com/wongkinyiu/yolov7). 
+[YOLOX](https://github.com/Megvii-BaseDetection/YOLOX). 
 Thanks for their excellent work!
