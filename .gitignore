@@ -1,0 +1,7 @@
+*.txt
+!requirements.txt
+data/
+mot_results/
+**/__pycache__
+.idea/
+evaluation_HOTA/

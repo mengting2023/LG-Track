@@ -1,0 +1,43 @@
+
+# ------------------------- MOT17 Dataset train or test spilt -------------------------
+data_path: './datasets/MOT17'
+train_seqs: ['02', '04', '05', '09', '10', '11', '13']
+test_seqs: ['01', '03', '06', '07', '08', '12', '14']
+det_name: ['DPM', 'FRCNN', 'SDP']
+
+det_file: './datasets/MOT17-test' # if run track.py, detector files need be put in <det_file>
+
+# ------------------------------------- Detector --------------------------------------
+device: cuda   # cuda or cpu
+conf: 0.01
+nms: 0.7
+tsize: None
+fuse: True
+fp16: True
+det_ckpt: './weights/bytetrack_x_mot17.pth.tar'
+exp_file: './yolox/exps/example/mot/yolox_x_mix_det.py'
+
+# --------------------------------------- Reid ---------------------------------------
+reid_config: './fast_reid/configs/MOT17/sbs_S50.yml'
+reid_weights: './weights/mot17_sbs_S50.pth'
+
+# ------------------------------------- CMC --------------------------------------
+cmc_method: file
+cmc_path: './tracker/GMC_files/MOTChallenge'
+
+# --------------------------------- Data Association ---------------------------------
+pos: 0.55
+cls: 0.75
+match_thresh_a: 0.65
+match_thresh_b: 0.65
+match_thresh_c: 0.5
+match_thresh_d: 0.55
+track_buffer: 30
+new_track_thresh: 0.7
+aspect_ratio_thresh: 1.6
+min_box_area: 10
+
+# ------------------------------------- Output --------------------------------------
+save_det_results: False
+save_img: False
+output_root: './output'
