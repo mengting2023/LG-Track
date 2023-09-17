@@ -7,7 +7,7 @@ from loguru import logger
 from tracker.utils.parser import get_config
 from tracker.utils.timer import Timer
 from yolox.utils import get_model_info, fuse_model, postprocess
-from yolox.data.data_augment import preproc
+from yolox.database.data_augment import preproc
 from yolox.exp import get_exp
 from yolox.utils.visualize import plot_tracking
 from tracker.LG_Track import LG_Track

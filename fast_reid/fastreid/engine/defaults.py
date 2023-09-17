@@ -17,7 +17,7 @@ from collections import OrderedDict
 import torch
 from torch.nn.parallel import DistributedDataParallel
 
-from fast_reid.fastreid.data import build_reid_test_loader, build_reid_train_loader
+from fast_reid.fastreid.database import build_reid_test_loader, build_reid_train_loader
 from fast_reid.fastreid.evaluation import (ReidEvaluator,
                                  inference_on_dataset, print_csv_format)
 from fast_reid.fastreid.modeling.meta_arch import build_model
