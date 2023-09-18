@@ -63,10 +63,13 @@ Download [MOT17](https://motchallenge.net/data/MOT17/) and [MOT20](https://motch
              └── test
 ```
 
-## Model
-Download and store the trained models in 'weights' folder as follow:
+## Model and GMC_files
+Download and store the trained models in 'weights' folder  and GMC_files in 'tracker' floder as follow:
 ```
+# models
 <LG-Track_dir>/weights
+# GMC_files
+<LG-Track_dir>/tracker
 ```
 - We used the publicly available [ByteTrack](https://github.com/ifzhang/ByteTrack) model zoo trained on MOT17 and MOT20 for YOLOX object detection.
 
