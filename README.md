@@ -1,5 +1,7 @@
-# LG-Track
+# Localization-Guided Track: A Deep Association Multi-Object Tracking Framework Based on Localization Confidence of Detections
+
 #### LG-Track is a simple, robust and reliable tracker
+> [**Localization-Guided Track: A Deep Association Multi-Object Tracking Framework Based on Localization Confidence of Detections**](http://arxiv.org/abs/2309.09765)
 
 <p align="center"><img src="assets/results.png" width="500"/></p>
 
@@ -99,6 +101,18 @@ if you have got the detection results (x1, y1, x2, y2, detection confidence, loc
 cd <LG-Track_dir>
 python3 track.py --datasets 'MOT20' --split 'test'
 python3 tracker/tools/interpolation.py --txt_path <path_to_track_result>
+```
+
+## Citation
+if you think this work is useful, please consider to cite our paper:
+
+```
+@article{meng2023lgtrack,
+  title={Localization-Guided Track: A Deep Association Multi-Object Tracking Framework Based on Localization Confidence of Detections},
+  author={Meng, Ting and Fu, Chunyun and Huang, Mingguang and Wang, Xiyang and He, Jiawei and Huang, Tao and Shi, Wankai},
+  journal={arXiv preprint arXiv:2309.09765},
+  year={2023}
+}
 ```
 
 ## Acknowledgement
