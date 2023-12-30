@@ -6,13 +6,13 @@
 <p align="center"><img src="assets/results.png" width="500"/></p>
 
 ## Update
-[2023/12] we proposed Deep LG-Track, which makes LG-Track more robust. We will release the paper of Deep LG-Track as soon as we can.
-####Results on MOT17 test set
+*[2023/12] we proposed Deep LG-Track, which makes LG-Track more robust. We will release the paper of Deep LG-Track as soon as we can.
+###Results on MOT17 test set
 | Tracker     |  HOTA | AssA | IDF1 | MOTA  | DetA  | 
 |:-----------:|:-----:|:----:|:----:|:-----:|:-----:|
 |LG-Track     | 65.4  | 65.4 | 80.4 | 81.4  | 65.6  | 
 |Deep LG-Track| 65.9  | 66.5 | 81.4 | 81.3  | 65.5  | 
-####Results on MOT20 test set
+###Results on MOT20 test set
 | Tracker     |  HOTA | AssA | IDF1 | MOTA  | DetA  | 
 |:-----------:|:-----:|:----:|:----:|:-----:|:-----:|
 |LG-Track     | 63.4  | 62.9 | 77.4 | 77.8  | 64.1  |  
