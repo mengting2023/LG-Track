@@ -5,6 +5,19 @@
 
 <p align="center"><img src="assets/results.png" width="500"/></p>
 
+## Update
+* [2023/12] we proposed Deep LG-Track, which makes LG-Track more robust. We will release the paper of Deep LG-Track as soon as we can.
+#####Results on MOT17 test set
+| Tracker     |  HOTA | AssA | IDF1 | MOTA  | DetA  | 
+|:-----------:|:-----:|:----:|:----:|:-----:|:-----:|
+|LG-Track     | 65.4  | 65.4 | 80.4 | 81.4  | 65.6  | 
+|Deep LG-Track| 65.9  | 66.5 | 81.4 | 81.3  | 65.5  | 
+#####Results on MOT20 test set
+| Tracker     |  HOTA | AssA | IDF1 | MOTA  | DetA  | 
+|:-----------:|:-----:|:----:|:----:|:-----:|:-----:|
+|LG-Track     | 63.4  | 62.9 | 77.4 | 77.8  | 64.1  |  
+|Deep LG-Track| 63.9  | 64.1 | 78.4 | 77.6  | 64.0  | 
+
 ## Abstract
 
 In currently available literature, no tracking-by-detection (TBD) paradigm-based tracking method has considered the localization confidence of detection boxes. In most TBD-based methods, it is considered that objects of low detection confidence are highly occluded and thus it is a normal practice to directly disregard such objects or to reduce their priority in matching. In addition, appearance similarity is not a factor to consider for matching these objects. However, in terms of the detection confidence fusing classification and localization, objects of low detection confidence may have inaccurate localization but clear appearance; similarly, objects of high detection confidence may have inaccurate localization or unclear appearance; yet these objects are not further classified. In view of these issues, we propose Localization-Guided Track (LG-Track). Firstly, localization confidence is applied in MOT for the first time, with appearance clarity and localization accuracy of detection boxes taken into account, and an effective deep association mechanism is designed; secondly, based on the classification confidence and localization confidence, a more appropriate cost matrix can be selected and used; finally, extensive experiments have been conducted on MOT17 and MOT20 datasets. The results show that our proposed method outperforms the compared state-of-art tracking methods.
